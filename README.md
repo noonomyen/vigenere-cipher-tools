@@ -58,7 +58,7 @@ echo "hfnlp" | vigenere decrypt abc
 # Output: hello
 ```
 
-Encrypting and decrypting text with numbers
+Encrypting and decrypting text with special characters
 
 ```bash
 echo "hello{world_123}" | vigenere encrypt abcdef | vigenere decrypt abcdef
