@@ -24,4 +24,8 @@ install: $(TARGET)
 uninstall:
 	rm -f /usr/local/bin/$(TARGET)
 
-.PHONY: all build clean install uninstall
+test:
+	@echo "Running tests..."
+	./test.sh
+
+.PHONY: build
