@@ -30,9 +30,6 @@ void vigenere::decrypt_stream(std::istream& in, std::ostream& out, const std::st
         throw std::logic_error("Key cannot be empty.");
     }
 
-    std::string key_lc = key;
-    std::transform(key_lc.begin(), key_lc.end(), key_lc.begin(), [](unsigned char c){ return std::tolower(c); });
-
     size_t i = 0;
     char c;
 
